@@ -11,14 +11,71 @@
 
 #################################################################
 #
+#    Annotation properties
+#
+#################################################################
+
+
+###  http://www.semanticweb.org/cneubauer/ontologies/2015/4/Mineralwater#isBottledIn
+
+:isBottledIn rdf:type owl:AnnotationProperty .
+
+
+
+###  http://www.semanticweb.org/cneubauer/ontologies/2015/4/Mineralwater#isOwnedBy
+
+:isOwnedBy rdf:type owl:AnnotationProperty .
+
+
+
+
+
+#################################################################
+#
 #    Object Properties
 #
 #################################################################
 
 
-###  http://www.semanticweb.org/cneubauer/ontologies/2015/4/Mineralwater#hasWell
+###  http://www.semanticweb.org/cneubauer/ontologies/2015/4/Mineralwater#hasGas
 
-:hasWell rdf:type owl:ObjectProperty .
+:hasGas rdf:type owl:FunctionalProperty ,
+                 owl:ObjectProperty .
+
+
+
+###  http://www.semanticweb.org/cneubauer/ontologies/2015/4/Mineralwater#hasHighFluoride
+
+:hasHighFluoride rdf:type owl:FunctionalProperty ,
+                          owl:ObjectProperty .
+
+
+
+###  http://www.semanticweb.org/cneubauer/ontologies/2015/4/Mineralwater#hasLowSodium
+
+:hasLowSodium rdf:type owl:FunctionalProperty ,
+                       owl:ObjectProperty .
+
+
+
+
+
+#################################################################
+#
+#    Data properties
+#
+#################################################################
+
+
+###  http://www.semanticweb.org/cneubauer/ontologies/2015/4/Mineralwater#WaterName
+
+:WaterName rdf:type owl:DatatypeProperty .
+
+
+
+###  http://www.semanticweb.org/cneubauer/ontologies/2015/4/Mineralwater#WellName
+
+:WellName rdf:type owl:DatatypeProperty .
 
 
 
@@ -31,7 +88,19 @@
 #################################################################
 
 
-###  http://www.semanticweb.org/cneubauer/ontologies/2015/4/Mineralwater#Healing_Water
+###  http://www.semanticweb.org/cneubauer/ontologies/2015/4/Mineralwater#Brand
+
+:Brand rdf:type owl:Class .
+
+
+
+###  http://www.semanticweb.org/cneubauer/ontologies/2015/4/Mineralwater#Gas
+
+:Gas rdf:type owl:Class .
+
+
+
+###  http://www.semanticweb.org/cneubauer/ontologies/2015/4/untitled-ontology-15#Healing_Water
 
 :Healing_Water rdf:type owl:Class ;
                
@@ -39,7 +108,7 @@
 
 
 
-###  http://www.semanticweb.org/cneubauer/ontologies/2015/4/Mineralwater#Mineral_Water
+###  http://www.semanticweb.org/cneubauer/ontologies/2015/4/untitled-ontology-15#Mineral_Water
 
 :Mineral_Water rdf:type owl:Class ;
                
@@ -56,6 +125,43 @@
 ###  http://www.semanticweb.org/cneubauer/ontologies/2015/4/untitled-ontology-15#Well
 
 :Well rdf:type owl:Class .
+
+
+
+
+
+#################################################################
+#
+#    Individuals
+#
+#################################################################
+
+
+###  http://www.semanticweb.org/cneubauer/ontologies/2015/4/Mineralwater#Classic
+
+:Classic rdf:type :Gas ,
+                  owl:NamedIndividual .
+
+
+
+###  http://www.semanticweb.org/cneubauer/ontologies/2015/4/Mineralwater#Medium
+
+:Medium rdf:type :Gas ,
+                 owl:NamedIndividual .
+
+
+
+###  http://www.semanticweb.org/cneubauer/ontologies/2015/4/Mineralwater#No_Gas
+
+:No_Gas rdf:type :Gas ,
+                 owl:NamedIndividual .
+
+
+
+###  http://www.semanticweb.org/cneubauer/ontologies/2015/4/Mineralwater#Still
+
+:Still rdf:type :Gas ,
+                owl:NamedIndividual .
 
 
 
